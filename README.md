@@ -17,7 +17,7 @@ Generator and Discriminator is being done in [Models.py](https://github.com/shas
 
 ### Dataset Prepration
 Since we are working on Satellite Image to Map generator, the dataset which is available consists of the image both satellite image and respective map image side by side. 
-![Sample](https://drive.google.com/uc?export=view&id=1MMEnfkzb-b4oE_gwdeccpxzkGQhPfVl1)Each image in the dataset is of shape (1200, 600, 3). So first we need split the image in that format so that, the dataloader gets the that in (satellite_image, map_image) format. We are also doing basic augmentation to the input in order to make it more our generator more robust.
+![Sample 1](https://drive.google.com/uc?export=view&id=1MMEnfkzb-b4oE_gwdeccpxzkGQhPfVl1)Each image in the dataset is of shape (1200, 600, 3). So first we need split the image in that format so that, the dataloader gets the that in (satellite_image, map_image) format. We are also doing basic augmentation to the input in order to make it more our generator more robust.
 Dataprepration is being done in [dataset.py](https://github.com/shashi7679/pix2pix-GANs/blob/main/dataset.py)
 
 ### Hyperparameters
@@ -36,21 +36,18 @@ Configuration of these hyperparameters is being done in [config.py](https://gith
 
 ## Training Results
 #### _After 1st Epoch_
-        Satellite Image    |         Map          |    Generated Map
-![Sample](https://drive.google.com/uc?export=view&id=1bQ6xXN8jEWb14BpKjWBrnWInbyrJLxPi)
+![Output after Epoch 1](https://drive.google.com/uc?export=view&id=1bQ6xXN8jEWb14BpKjWBrnWInbyrJLxPi)_Satellite Image(left), Map(middle), Generated Map(right)_
+
 #### _After 100 Epochs_
-        Satellite Image    |         Map          |    Generated Map
-![Sample](https://drive.google.com/uc?export=view&id=1QNGRz16127euLiQ_BxcA_F9xPLu2mQZY)
+![Output after Epoch 100](https://drive.google.com/uc?export=view&id=1QNGRz16127euLiQ_BxcA_F9xPLu2mQZY)_Satellite Image(left), Map(middle), Generated Map(right)_
 
 #### _After 400 Epochs_
-        Satellite Image    |         Map          |    Generated Map
-![Sample](https://drive.google.com/uc?export=view&id=1bddfataLUOTYyH7E1iq6B-XY255lnQ_O)
+![Output after Epoch 400](https://drive.google.com/uc?export=view&id=1bddfataLUOTYyH7E1iq6B-XY255lnQ_O)_Satellite Image(left), Map(middle), Generated Map(right)_
 
 #### _After 800 Epochs_
-        Satellite Image    |         Map          |    Generated Map
-![Sample](https://drive.google.com/uc?export=view&id=16GbzMbWrOFfP3kO4h9wPvBnpHxaPlNsU)
+![Output after Epoch 800](https://drive.google.com/uc?export=view&id=16GbzMbWrOFfP3kO4h9wPvBnpHxaPlNsU)_Satellite Image(left), Map(middle), Generated Map(right)_
 ### Generator Loss Vs. Discriminator Loss
-![Sample](https://drive.google.com/uc?export=view&id=19FnwwJN1gtnCK2Y6XlhAH_YGvUB7rmJB)
+![Generator Loss Vs. Discriminator Loss](https://drive.google.com/uc?export=view&id=19FnwwJN1gtnCK2Y6XlhAH_YGvUB7rmJB)
 ## Training
 ```sh
 bash download.sh
@@ -59,7 +56,8 @@ cd pix2pix-GANs
 ```
 Run train.ipynb on Jupyter Notebook
 - For training, set LOAD_MODEL as False and SAVE_MODEL as True in [config.py](https://github.com/shashi7679/pix2pix-GANs/blob/main/config.py)
-- For Validation/ Using the saved model, set LOAD_MODEL as True in [config.py](https://github.com/shashi7679/pix2pix-GANs/blob/main/config.py)
+- For Validation/ Using the saved model, set LOAD_MODEL as True in [config.py](https://github.com/shashi7679/pix2pix-GANs/blob/main/config.py). 
+- To download the pretrained models of validation [Click Here](https://drive.google.com/drive/folders/1jgqB6zVJ3iSXyQ8JdrikTerk74DkTPSY?usp=sharing)
 
 
 ## References
