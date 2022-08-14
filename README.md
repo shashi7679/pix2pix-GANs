@@ -15,7 +15,7 @@ Generator architecture is similar to an autoencoder model, where as discriminato
  ![U-Net Architecture](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/u-net-architecture.png) 
 In case of discriminator, it is a patch-wise discriminator. The input given to the discriminator is the concatenation  of Image from domain 1 and generated image of domain 2. 
 ![Model Architectures](https://www.researchgate.net/publication/350987193/figure/fig3/AS:1014485737279490@1618883656591/The-architecture-of-the-generator-and-discriminator-networks-used-in-the-proposed-Pix2Pix.png)
-Generator and Discriminator is being done in [Models.py](https://github.com/shashi7679/pix2pix-GANs/blob/main/Models.py)
+Generator and Discriminator is being done in [Models.py](https://github.com/shashi7679/pix2pix-GANs/blob/master/Models.py)
 
 ### Dataset Prepration
 Since we are working on Satellite Image to Map generator, the dataset which is available consists of the image both satellite image and respective map image side by side. 
@@ -57,8 +57,8 @@ git clone git@github.com:shashi7679/pix2pix-GANs.git
 cd pix2pix-GANs
 ```
 Run train.ipynb on Jupyter Notebook
-- For training, set LOAD_MODEL as False and SAVE_MODEL as True in [config.py](https://github.com/shashi7679/pix2pix-GANs/blob/main/config.py)
-- For Validation/ Using the saved model, set LOAD_MODEL as True in [config.py](https://github.com/shashi7679/pix2pix-GANs/blob/main/config.py). 
+- For training, set LOAD_MODEL as False and SAVE_MODEL as True in [config.py](https://github.com/shashi7679/pix2pix-GANs/blob/master/config.py)
+- For Validation/ Using the saved model, set LOAD_MODEL as True in [config.py](https://github.com/shashi7679/pix2pix-GANs/blob/master/config.py). 
 - To download the pretrained models of validation [Click Here](https://drive.google.com/drive/folders/1jgqB6zVJ3iSXyQ8JdrikTerk74DkTPSY?usp=sharing)
 
 
