@@ -14,13 +14,13 @@ Generator architecture is similar to an autoencoder model, where as discriminato
  Generator's architecture is similar to U-Net architecture.
  ![U-Net Architecture](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/u-net-architecture.png) 
 In case of discriminator, it is a patch-wise discriminator. The input given to the discriminator is the concatenation  of Image from domain 1 and generated image of domain 2. 
-![Model Architectures](https://www.researchgate.net/publication/350987193/figure/fig3/AS:1014485737279490@1618883656591/The-architecture-of-the-generator-and-discriminator-networks-used-in-the-proposed-Pix2Pix.png)
+![Model Architectures](https://drive.google.com/uc?export=view&id=1011ku_4XxVHKDX4X6WNGH3oK6EbtgzJg)
 Generator and Discriminator is being done in [Models.py](https://github.com/shashi7679/pix2pix-GANs/blob/master/Models.py)
 
 ### Dataset Prepration
 Since we are working on Satellite Image to Map generator, the dataset which is available consists of the image both satellite image and respective map image side by side. 
 ![Sample 1](https://drive.google.com/uc?export=view&id=1MMEnfkzb-b4oE_gwdeccpxzkGQhPfVl1)Each image in the dataset is of shape (1200, 600, 3). So first we need split the image in that format so that, the dataloader gets the that in (satellite_image, map_image) format. We are also doing basic augmentation to the input in order to make it more our generator more robust.
-Dataprepration is being done in [dataset.py](https://github.com/shashi7679/pix2pix-GANs/blob/main/dataset.py)
+Dataprepration is being done in [dataset.py](https://github.com/shashi7679/pix2pix-GANs/blob/master/dataset.py)
 
 ### Hyperparameters
 |  Hyperparametrs  | Value  |
