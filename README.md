@@ -3,6 +3,8 @@
 We are building pix2pix GANs. For this we would be using PyTorch.
 We would be using Satellite-Map Image dataset(http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/maps.tar.gz).
 
+For more detailed explaination you may use this [Blog](https://medium.com/@Skpd/pix2pix-gan-for-generating-map-given-satellite-images-using-pytorch-6e50c318673a)
+
 ### Model Architecture
 Since pix2pix is a GAN based architecture, we have one generator which is generating images give some "input", and one discriminator which would discriminate the given image as real or fake. 
 pix2pix is best for Image-to-Image translation, where we have one image from one domain and another image of different domain. Our generator will try to come up with  image from second domain given an image from domain one.
